@@ -14,7 +14,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bignum = 12568945265245285n // now auto it become bigint bcos of n in the ends
 
@@ -29,10 +29,10 @@ let myObj={
 }
 
 const Myfunction = function(){
-    console.log("Hello World");
+    // console.log("Hello World");
 }
 
-console.table([typeof score,
+/*console.table([typeof score,
  typeof scoreValue, typeof isLoggedIn,
 typeof outSideTemp,
 typeof id,
@@ -41,3 +41,28 @@ typeof bignum,
 typeof heros,
 typeof myObj,
 typeof Myfunction]);
+*/
+
+//++++++++++++++++++++++
+//STACK(Primitive), HEAP(NON-PRIMITIVE)
+
+let myIdNAME = "Adnank847"
+
+let second = myIdNAME
+second = "kppl"
+
+console.log(myIdNAME);
+console.log(second);
+
+let userOne = {
+    email: "user@google.com",
+    name: "adnan"
+}
+
+let userTwo = userOne
+
+userTwo.email = "adnan@343"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
