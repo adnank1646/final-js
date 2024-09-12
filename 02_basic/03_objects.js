@@ -29,16 +29,21 @@ const JsUser = {
 //2. [name]:"value"
 //3. to access it use object[name]
 
-JsUser.email = "adnan@ret.com"
-Object.freeze(JsUser)
-JsUser.email = "addghj@321"
-console.log(JsUser);
+// JsUser.email = "adnan@ret.com"
+// Object.freeze(JsUser)
+// JsUser.email = "addghj@321"
+// console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello JS User");
 }
+JsUser.greeting2 = function(){
+    console.log(`Hello JS User, ${this.name}`);
+}
 
-console.log(JsUser.greeting);
+console.log(JsUser.greeting());
+console.log(JsUser.greeting2());
+
 
 
 
